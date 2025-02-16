@@ -1,0 +1,19 @@
+* {
+    font-family: "Open Sans", sans-serif;
+}
+
+.label {
+    border: solid 2px black;
+    border-radius: 15px;
+    max-width: 400px;;
+    background-color: #ffdcdc;
+    
+}
+
+.label h1 {
+    text-align: center;
+}
+
+.images {
+    text-align: center;
+}
