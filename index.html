@@ -5,30 +5,36 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Odin Recipes</title>
     <link rel="stylesheet" href="style.css" />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap"
-      rel="stylesheet"
-    />
+    <style>
+      @import url("https://fonts.googleapis.com/css2?family=Delicious+Handrawn&display=swap");
+    </style>
   </head>
   <body>
-    <header class="logo-container">
-      <img src="./images/logo.svg" alt="Odin Logo" class="logo" />
-      <h1 class="textlogo">Odin Recipes</h1>
+    <header class="header">
+      <div class="logo-container">
+        <img src="./images/logo.svg" alt="Odin Logo" class="logo" />
+        <h1 class="textlogo">Odin Recipes</h1>
+      </div>
+      <nav>
+        <ul class="menu">
+          <li><a href="#">About Us</a></li>
+          <li><a href="#">Contact</a></li>
+        </ul>
+      </nav>
     </header>
-
-    <nav class="menu">
-      <a href="#">About Us</a>
-      <a href="#">Contact</a>
-    </nav>
-
-    <main class="recipes">
-      <ul>
-        <li><a href="./recipes/hamburger.html">Hamburger</a></li>
-        <li><a href="./recipes/pizza.html">Pizza</a></li>
-        <li><a href="./recipes/bbq.html">Brazilian Barbecue</a></li>
-      </ul>
+    <main>
+      <h2 class="recipes">Recipes</h2>
+      <div class="container">
+        <div class="item1">
+          <a href="./recipes/hamburger.html">Hamburger</a>
+        </div>
+        <div class="item2">
+          <a href="./recipes/pizza.html">Pizza</a>
+        </div>
+        <div class="item3">
+          <a href="./recipes/bbq.html">Brazilian Barbecue</a>
+        </div>
+      </div>
     </main>
   </body>
 </html>
