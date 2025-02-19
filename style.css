@@ -18,9 +18,10 @@
   border-bottom: solid 1px #e5e7eb;
 }
 
-.logo-container {
+.logo-container, .header a {
   display: flex;
   align-items: center;
+  color: black;
 }
 
 .logo {
@@ -42,13 +43,14 @@
   margin-left: 50px;
 }
 
-.menu li a {
+.menu li a, footer a {
   color: #6a7282;
   font-size: 0.9rem;
   font-weight: 600;
 }
 
-.menu li a:hover {
+.menu li a:hover,
+footer a:hover {
   text-decoration: underline;
   text-underline-offset: 3px;
   text-decoration-thickness: 2px;
@@ -57,7 +59,7 @@
 
 .recipes {
   text-align: center;
-  padding-top: 50px;
+  padding-top: 40px;
   padding-bottom: 40px;
   background-color: #f9fafb;
   font-size: 2rem;
@@ -72,6 +74,8 @@
   justify-content: center;
   background-color: #f9fafb;
   gap: 30px;
+  padding-bottom: 50px;
+  border-bottom: solid 1px #e5e7eb;
 }
 
 .container a {
@@ -96,6 +100,34 @@
   border-radius: 10px;
   padding: 50px;
   background-color: white;
+}
+
+.container .item1-recipe {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border: solid 1px rgba(0, 0, 0, 0.055);
+  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.103);
+  border-radius: 10px;
+  padding: 40px 80px 20px 80px;
+  background-color: white;
+  width: 900px;
+}
+
+.img-container {
+  width: 300px;
+  height: 200px;
+}
+
+.img-container img{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 10px;
+}
+
+.burger-img, .bbq-img, .pizza-img {
+  border-radius: 10px;
 }
 
 .container > .item2 {
@@ -124,4 +156,30 @@
   border-radius: 10px;
   padding: 50px;
   background-color: white;
+}
+
+.ingredients, .steps {
+  margin-top: 20px;
+}
+
+.ingredients p, .steps p {
+  margin-bottom: 20px;
+  font-weight: bold;
+  font-size: 1.2rem;
+  text-align: center;
+}
+.ingredients li {
+  margin-bottom: 25px;
+  list-style: circle;
+  font-size: 0.9rem;
+}
+
+.steps li {
+  list-style: decimal;
+}
+
+footer {
+  text-align: center;
+  margin-top: 40px;
+  margin-bottom: 40px;
 }
